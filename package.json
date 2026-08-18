@@ -1,0 +1,46 @@
+{
+  "name": "dsh-whale-pet",
+  "version": "1.0.0",
+  "private": true,
+  "description": "鲸鱼娘桌宠 —— DSH Web 右下角看板娘：随 Agent 工作状态切换动作，任务完成播放鲸歌。素材取自 DeepSeek 社区 (dsh-whale-musume, MIT)。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "desktop-pet",
+    "whale-girl",
+    "mascot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepseek-ai/deepseek-harness.git"
+  }
+}

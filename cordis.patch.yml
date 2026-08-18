@@ -1,0 +1,10 @@
+# dsh-whale-pet bundle patch —— 把鲸鱼娘桌宠叠加到 profile 组合上（零侵入）。
+# 单包双面（dsh.bundle + dsh.client）：
+#   · 宿主插件（worker 侧）：注册 /api/dsh-whale-pet/assets 只读静态资源路由，
+#     把包内 assets（鲸鱼娘 webp 立绘 + 鲸歌 mp3）供给浏览器；
+#   · 浏览器插件（dsh.client）：注入鲸鱼娘桌宠（shell.overlay 槽位，React 组件），
+#     通过 useSessions 读取 Agent 工作状态，切换待机/工作/等待/完成/出错动作，
+#     任务完成时播放鲸歌。全部资源本地加载，无外部请求、无遥测。
+- insert:
+    - id: dsh-whale-pet
+      name: dsh-whale-pet

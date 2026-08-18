@@ -1,0 +1,27 @@
+dsh-whale-pet —— 鲸鱼娘桌宠（DSH 插件）
+
+素材来源与授权（third-party notices）：
+
+1) 鲸鱼娘立绘（*.webp）
+   取自 DeepSeek 社区开源项目「dsh-whale-musume」
+   (https://github.com/Sutera-Diffusus/dsh-whale-musume)
+   Copyright (c) 2026 Sutera-Diffusus
+   License: MIT License
+   (https://github.com/Sutera-Diffusus/dsh-whale-musume/blob/main/LICENSE)
+
+   本插件仅复用其鲸鱼娘立绘（assets/generated/dsh-whale-state-*.webp），
+   未使用其对话/天气/游戏等逻辑代码；MIT 许可下允许使用、复制、修改与分发，
+   前提是保留上述版权与许可声明。
+
+2) 鲸鱼娘语音（voice-*.mp3，「晓伊」神经网络音色）
+   取自 DeepSeek 社区项目「dsh-whale-pet（DeepSeek 鲸鱼娘）」
+   (https://github.com/aceice01/dsh-whale-pet)
+   Copyright (c) 2026 dsh-whale-pet contributors
+   License: DeepSeek Whale Girl Pet — Non-Commercial Use License
+   (允许个人学习/研究/娱乐与非商业性修改、复制和分发，需保留许可声明与致谢；
+    禁止任何商业用途。角色动画与语音合成服务版权归原作者所有。)
+   (https://github.com/aceice01/dsh-whale-pet/blob/master/LICENSE)
+
+   本插件仅复用其预合成语音片段（lib/audio.json 中的
+   welcome / celebrate / coquetry 台词，共 14 条），仅用于本地非商业桌宠演示，
+   并随包保留上述许可与致谢声明。
